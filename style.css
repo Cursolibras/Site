@@ -1,0 +1,111 @@
+/* Estilos para dispositivos maiores */
+header {
+    background:#198950;
+    padding: 5px;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+iframe {
+    width: 98%;
+    height: 56.25%;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    right: 0;
+  max-width: 400px;
+  max-height: 356.25px;
+}
+
+
+footer {
+  
+  position:absolute ;
+  top:89.00%;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #D2691E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+.btn:active {
+  background-color: red;
+  /* Outras propriedades de estilo que você queira aplicar */
+}
+.btn {
+  margin-bottom: 5px;
+  padding: 5px;
+  /* espaçamento entre botões */
+}
+
+.btn:hover {
+     	 background-color: red;
+}
+
+.exibirVideo{
+  
+  background:  #0000ff;
+  color: #FDFDFD;
+  left: 23%;
+  position: absolute;
+  width: 74%;
+  height: 100%;
+  border: 0px;
+  padding: 5px;
+}
+
+#direito{
+  background: #00ffFF;
+  color: #FDFDFD;
+  width:20%;
+  height: 100.00%;
+  position: absolute;
+  padding: 5px;
+  border: 0px;
+  
+}
+body{
+  
+}
+
+/* Estilos para dispositivos menores */
+@media screen and (max-width: 600px) {
+   header {
+        width: 300px:
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    main {
+        text-align: center;
+    }
+}
