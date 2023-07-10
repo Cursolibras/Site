@@ -1,6 +1,6 @@
 /* Estilos para dispositivos maiores */
 header {
-    background:#198950;
+    background:#daa520;
     padding: 5px;
     color: #fff;
 }
@@ -27,14 +27,15 @@ main {
 
 iframe {
     width: 98%;
-    height: 56.25%;
+    height: 36.25%;
     margin: auto;
     position: absolute;
     top: 10px;
     left: 1px;
     right: 0;
-  max-width: 400px;
-  max-height: 356.25px;
+  max-width: 500px;
+  max-height: 456.25px;
+  position: left;
 }
 
 
@@ -70,14 +71,14 @@ footer {
 
 .exibirVideo{
   
-  background:  #0000ff;
+  background:#0000ff;
   color: #FDFDFD;
   left: 23%;
   position: absolute;
-  width: 74%;
+  width: 76%;
   height: 100%;
   border: 0px;
-  padding: 5px;
+  padding: 3px;
 }
 
 #direito{
@@ -92,6 +93,12 @@ footer {
 }
 body{
   
+}
+
+
+#videoframe{
+  width: 100%;
+  height: 56.25%;
 }
 
 /* Estilos para dispositivos menores */
