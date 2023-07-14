@@ -1,118 +1,135 @@
-/* Estilos para dispositivos maiores */
-header {
-    background:#daa520;
-    padding: 5px;
-    color: #fff;
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
-header nav li {
-    display: inline;
-    margin-right: 10px;
+a:hover {
+  background: #FFE4B5;
 }
 
-nav li a {
-    color: #fff;
-    text-decoration: none;
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-main {
-    padding: 20px;
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ADD8E6;
 }
 
-iframe {
-    width: 98%;
-    height: 36.25%;
-    margin: auto;
-    position: absolute;
-    top: 10px;
-    left: 1px;
-    right: 0;
-  max-width: 500px;
-  max-height: 456.25px;
-  position: left;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
 }
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+#exibirVideo{
+  background: yellow;
+  width: 100%;
+  height: 200px;
+}
+#videoFrame{
+  background: white;
+  width: 100%;
+  
+  height: 100%;
+  max-height: 360px;
+  max-width: 640px;
+}
+
 
 
 footer {
-  
-  position:absolute ;
-  top:89.00%;
+  height: 40px;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  /* Mantém o rodapé no final da página */
+  position: relative;
+  bottom: 0;
+  width: 100%
 }
 
-.btn {
-  display: inline-block;
-  background-color: #D2691E;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  width: 100%;
-}
-.btn:active {
-  background-color: red;
-  /* Outras propriedades de estilo que você queira aplicar */
-}
-.btn {
-  margin-bottom: 5px;
-  padding: 5px;
-  /* espaçamento entre botões */
+h3{
+  color: brown;
 }
 
-.btn:hover {
-     	 background-color: red;
-}
-
-.exibirVideo{
-  
-  background:#0000ff;
-  color: #FDFDFD;
-  left: 23%;
-  position: absolute;
-  width: 76%;
-  height: 100%;
-  border: 0px;
-  padding: 3px;
-}
-
-#direito{
-  background: #00ffFF;
-  color: #FDFDFD;
-  width:20%;
-  height: 100.00%;
-  position: absolute;
-  padding: 5px;
-  border: 0px;
-  
-}
-body{
-  
-}
-
-
-#videoframe{
-  width: 100%;
-  height: 56.25%;
-}
-
-/* Estilos para dispositivos menores */
-@media screen and (max-width: 600px) {
-   header {
-        width: 300px:
-        text-align: center;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    main {
-        text-align: center;
-    }
+@media (max-width: 10000600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e8e8e8;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
