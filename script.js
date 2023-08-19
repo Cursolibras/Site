@@ -3,7 +3,7 @@ function mostrarVideo(video) {
       var videoUrl = '';
    //alert("oi");
       if (video === 'video1') {
-        videoUrl = 'https://drive.google.com/file/d/1--vCMFYCwv4sIWy6VQwpyk65pvD6iNEG/preview';
+        videoUrl = 'https://drive.google.com/file/d/10HgDajXrAqwapgqu87PwN1jf76sgKhI4/preview';
       } else if (video === 'video2') {
         videoUrl = 'https://www.youtube.com/embed/tp-IMViuTzo';
       } else if (video === 'video3') {
