@@ -5,6 +5,7 @@ function mostrarVideo(video) {
         videoUrl = 'https://drive.google.com/file/d/10HgDajXrAqwapgqu87PwN1jf76sgKhI4/preview';
       } else if (video === 'video2') {
         videoUrl = 'http://drive.google.com/file/d/11aT4z8U-zJrMX_fTGjgK1UgwC5UxQxQW/preview';
+alert("Nova video aula!!");
       } else if (video === 'video3') {
         videoUrl = 'https://www.youtube.com/embed/video3';
       }
