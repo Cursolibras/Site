@@ -84,7 +84,7 @@ p{
   position: fixed;
   width: 100%;
   bottom: 0;
-  border: 1px solid #000;
+  border: 0px solid #000;
   
 }
 
@@ -95,7 +95,7 @@ p{
 }
 #logo{
   
-  padding: 1px;
+  padding: 0px;
   position: fixed;
   width: 90%;
   height: 15%;
