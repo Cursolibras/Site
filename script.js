@@ -1,7 +1,6 @@
 function mostrarVideo(video) {
       var videoFrame = document.getElementById('videoFrame');
       var videoUrl = '';
-   //alert("oi");
       if (video === 'video1') {
         videoUrl = 'https://drive.google.com/file/d/10HgDajXrAqwapgqu87PwN1jf76sgKhI4/preview';
       } else if (video === 'video2') {
@@ -13,14 +12,15 @@ function mostrarVideo(video) {
       videoFrame.src = videoUrl;
     
     
+    
     var div = document.getElementById("exibirVideo");
     div.style.display = "block";
     var navy = document.getElementById("menu");
     
-    
-    
     var nav2= document.getElementById("nav");
     nav2.classList.toggle('active');
-       
-    }
+    
+
+
+}
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fale conisco</title>
+  <title>Fale Conosco</title>
   <link rel="stylesheet" href="./style.css">
   <script src="script.js"></script>
 
@@ -12,9 +12,17 @@
 <body>
   <header id="header">
     <h1>AULA DE LIBRAS</h1>
+  </header>
+   
+ <button id="meuBotao">Voltar pagina anterior</button>
 
-</header>
+  <iframe id="formPesquisa" src="https://docs.google.com/forms/d/e/1FAIpQLSeASRdY1Y3NN9DdYM7fdv6PJxzBjUa_1Zlny6rryUnLBcupuQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
   
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeASRdY1Y3NN9DdYM7fdv6PJxzBjUa_1Zlny6rryUnLBcupuQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+<script>
+      document.getElementById("meuBotao").addEventListener("click", function() {
+      window.location.href = "index.html";
+      });
+</script>
+  
 </body>
 </html>
